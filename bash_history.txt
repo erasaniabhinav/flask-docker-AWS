@@ -1,0 +1,51 @@
+    1  sudo yum update -y
+    2  sudo yum install docker
+    3  docker --version
+    4  sudo service docker start
+    5  sudo service docker status
+    6  ls
+    7  docker --version
+    8  sudo yum install python3
+    9  sudo yum install python3-pip -y
+   10  pip3 install Flask
+   11  mkdir flask-app
+   12  ls
+   13  cd flask-app/
+   14  nano app.py
+   15  nano Dockerfile
+   16  nano requirements.txt
+   17  docker build -t flask-app .
+   18  docker run -p 5000:5000 flask-app
+   19  nano app.py 
+   20  docker run -p 8080:8080 flask-app
+   21  nano app.py 
+   22  docker build -t flask-app .
+   23  docker images
+   24  docker ps
+   25  docker run -p 5000:5000 flask-app
+   26  docker ps
+   27  docker ps -a
+   28  docker images
+   29  docker ps -a
+   30  docker start 66b5e0f61375
+   31  docker logs 66b5e0f61375
+   32  git init
+   33  sudo yum git install
+   34  sudo yum install git
+   35  git init
+   36  git add .
+   37  git commit -m "Flask application and Dockerfile"
+   38  git remote set-url origin https://erasaniabhinav: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 @github.com/erasaniabhinav/flask-docker-aws.git
+   39  git remote add origin https://github.com/erasaniabhinav/flask-docker-aws
+   40  git branch -M main
+   41  git push -u origin main
+   42  echo ".bash_history" >> .gitignore
+   43  git add .
+   44  git commit -m "Add entire Flask project and bash history"
+   45  ls -la
+   46  echo ".bash_history" >> .gitignore
+   47  git add .
+   48  git commit -m "Add entire Flask project and bash history"
+   49  git push origin main
+   50  cp ~/.bash_history ./bash_history.txt
+   51  history > bash_history.txt
